@@ -22,7 +22,7 @@ function currentTime() {
     min = updateTime(min);
     sec = updateTime(sec);
 
-    document.getElementById("clock").textContent = hour + " : " + min + " : " + sec + dayTime; /* adding time to the div */
+    document.getElementById("clock").textContent = hour + ":" + min + ":" + sec + dayTime; /* adding time to the div */
     setTimeout(currentTime, 1000); /* setting timer */
 }
 

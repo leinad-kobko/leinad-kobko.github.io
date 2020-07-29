@@ -7,7 +7,7 @@
     - Change it so the description is set to the ingredients of the meal you make
 -->
 
-<html>
+<html> 
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style.css">
@@ -29,19 +29,20 @@
         </nav>
 
         <div class="meals">
-            <div class="meal">[7:30am] Breakfast -> %breakfast% </div>
-            <div class="description">Insert description here</div>
-            <div class="meal">[1:30pm] Lunch -> %lunch% </div>
-            <div class="description">Insert description here</div>
-            <div class="meal">[7:30pm] Dinner -> %dinner% </div>
-            <div class="description">Insert description here</div>
-            <div class="meal">Your snack for the day-> %snack%</div>
-            <div class="description">Insert description here</div>
+            <div id="breakfast" class="meal">[7:30am] Breakfast -> %breakfast% </div>
+            <div class="ingredients">· Insert ingredients here</div>
+            <div id="lunch" class="meal">[1:30pm] Lunch -> %lunch% </div>
+            <div class="ingredients">· Insert ingredients here</div>
+            <div id="dinner" class="meal">[7:30pm] Dinner -> %dinner% </div>
+            <div class="ingredients">· Insert ingredients here</div>
+            <div id="snack" class="meal">Your snack for the day-> %snack%</div>
+            <div class="ingredients">· Insert ingredients here</div>
         </div>
 
         <footer>Careful! Eating past 8pm will make your stomach have troubles!</footer>
 
         <script src="../time.js"></script>
+        <script src="../js/nutrition.js"></script>
     </body>
 </html>
 
