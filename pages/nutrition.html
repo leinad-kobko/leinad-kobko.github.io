@@ -1,12 +1,21 @@
 <!DOCTYPE html> 
+
+<!-- TODO
+    - Add a clock to the top right
+    - Change the meals so you are able to press a button and it randomizes which one you get.
+    - Change the time so it highlights the next meal you will come across
+    - Change it so the description is set to the ingredients of the meal you make
+-->
+
 <html>
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style.css">
-        <title>Nutrition Planner</title>
+        <title>Nutrition</title>
     </head>
     <body>
         <header>
+            <div class="clock">8:41:19</div>
             <div class=title_head>Nutrition</div>
         </header>
         
@@ -21,13 +30,13 @@
 
         <div class="meals">
             <div class="meal">[7:30am] Breakfast -> %breakfast% </div>
-            <div>Breakfast description here</div>
+            <div class="description">Insert description here</div>
             <div class="meal">[1:30pm] Lunch -> %lunch% </div>
-            <div>Breakfast description here</div>
+            <div class="description">Insert description here</div>
             <div class="meal">[7:30pm] Dinner -> %dinner% </div>
-            <div>Breakfast description here</div>
+            <div class="description">Insert description here</div>
             <div class="meal">Your snack for the day-> %snack%</div>
-            <div>Breakfast description here</div>
+            <div class="description">Insert description here</div>
         </div>
 
         <footer>Careful! Eating past 8pm will make your stomach have troubles!</footer>
