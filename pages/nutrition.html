@@ -1,48 +1,42 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 
 <!-- TODO
-    - Add a clock to the top right
-    - Change the meals so you are able to press a button and it randomizes which one you get.
-    - Change the time so it highlights the next meal you will come across
-    - Change it so the description is set to the ingredients of the meal you make
+
 -->
 
-<html> 
+<html>
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style.css">
-        <title>Nutrition</title>
+        <title>Home</title>
     </head>
-    <body>
-        <header>
-            <div id="clock">8:41:19</div>
-            <div class=title_head>Nutrition</div>
-        </header>
-        
+    <body>              
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="./events.html">Events</a>
-            <a href="./fitness.html">Fitness</a>
-            <a class="active">Nutrition</a>
-            <a href="./shifts.html">Shifts</a>
-            <a href="./tasks.html">Tasks</a>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li> 
+                    <a href="./events.html">Events</a>
+                </li>
+                <li>
+                    <a href="./fitness.html">Fitness</a>
+                </li>
+                <li>
+                    <a class="active">Nutrition</a>
+                </li>
+                <li>
+                    <a href="./shifts.html">Shifts</a>
+                </li>
+                <li> 
+                    <a href="./tasks.html">Tasks</a>
+                </li>
+                <div id="clock">%time%</div>
+            </ul>
         </nav>
 
-        <div class="meals">
-            <div id="breakfast" class="meal">[7:30am] Breakfast -> %breakfast% </div>
-            <div class="ingredients">· Insert ingredients here</div>
-            <div id="lunch" class="meal">[1:30pm] Lunch -> %lunch% </div>
-            <div class="ingredients">· Insert ingredients here</div>
-            <div id="dinner" class="meal">[7:30pm] Dinner -> %dinner% </div>
-            <div class="ingredients">· Insert ingredients here</div>
-            <div id="snack" class="meal">Your snack for the day-> %snack%</div>
-            <div class="ingredients">· Insert ingredients here</div>
-        </div>
-
-        <footer>Careful! Eating past 8pm will make your stomach have troubles!</footer>
-
+        <script src="../main.js"></script>
         <script src="../time.js"></script>
-        <script src="../js/nutrition.js"></script>
     </body>
 </html>
 

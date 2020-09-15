@@ -1,25 +1,78 @@
 <!DOCTYPE html>
+
+<!-- TODO
+
+-->
+
 <html>
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../style.css">
         <title>Fitness</title>
     </head>
-    <body>
-        <header>
-            <div id="clock">8:41:19</div>
-            <div class=title_head>Fitness</div>
-        </header>
-        
+    <body>        
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="./events.html">Events</a>
-            <a class="active">Fitness</a>
-            <a href="./nutrition.html">Nutrition</a>
-            <a href="./shifts.html">Shifts</a>
-            <a href="./tasks.html">Tasks</a>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li> 
+                    <a href="./events.html">Events</a>
+                </li>
+                <li>
+                    <a class="active">Fitness</a>
+                </li>
+                <li>
+                    <a href="./nutrition.html">Nutrition</a>
+                </li>
+                <li>
+                    <a href="./shifts.html">Shifts</a>
+                </li>
+                <li> 
+                    <a href="./tasks.html">Tasks</a>
+                </li>
+                <div id="clock">%time%</div>
+            </ul>
         </nav>
 
+        <div class="day1">
+            <div class="above-table">
+                <h1>Day 1: Home Workout</h1>
+            </div>
+            <table>
+                <tr class="top-row">
+                    <th>Exercise</th>
+                    <th>Goal</th>
+                </tr>
+                <tr>
+                    <td>Pushups</td>
+                    <td>50 reps</td>
+                </tr>
+                <tr>
+                    <td>Plank</td>
+                    <td>1 min</td>
+                </tr>
+            </table>
+        </div>
+        <div class="day1">
+            <h1>Day 2: Home Workout</h1>
+            <table>
+                <tr class="top-row">
+                    <th>Exercise</th>
+                    <th>Goal</th>
+                </tr>
+                <tr>
+                    <td>Pushups</td>
+                    <td>50 reps</td>
+                </tr>
+                <tr>
+                    <td>Plank</td>
+                    <td>1 min</td>
+                </tr>
+            </table>
+        </div>
+
+        <script src="../main.js"></script>
         <script src="../time.js"></script>
     </body>
 </html>

@@ -1,89 +1,104 @@
+/* BACKGROUND COLORS
+   bg: #121212
+   bar: #1F1B24
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
+    font-family: 'Aldrich';
+    color: white;
 }
 
-/**************************************************************
-*   General
-**************************************************************/
-
 body {
-    color: rgb(0, 0, 0);
-    font: 18px Calibri;
-} 
+    background-color: #121212;
+}
 
-/**************************************************************
-*   Top section
-**************************************************************/
-.title_head {
-    font-size: 90px;
-    font-weight: 700;
-    padding: 5px;
-    width: 1700px;
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F1B24;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    font-size: 1.5rem;    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem 0.75rem;
+    text-decoration: none;
+    transition: color 0.9s, border-bottom 0.2s;
+}
+
+nav ul li a:not(.active):hover {
+    color: limegreen;
+    border-bottom: 2px solid white;
+}
+
+.active {
+    color: limegreen;
 }
 
 #clock {
-    color: rgb(255, 255, 255);
     float: right;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 75px;
-    background-color: #a81813;
-    padding: 15px;
-}
-
-nav {
-    background-color: #333;
-    overflow: hidden;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-nav a {
-    float: left;
-    color: #f2f2f2;
+    font-size: 2.4rem;
+    margin-right: 1rem;
+    display: block;
+    color: limegreen;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.5rem;
     text-decoration: none;
-    font-size: 30px;
+    background-color: black;
+    border: 1px solid white;
 }
 
-nav a:hover {
-    background-color: #ddd;
-    color: black;
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
 }
 
-nav a.active {
-    background-color: #a81813;
-    color: white;
-}
-
-.shifts {
+th, td {
     padding: 15px;
-    font-size: 32px;
-}
-
-/**************************************************************
-*   Body
-**************************************************************/
-.meals {
-    padding: 15px;
-}
-
-.meal {
-    background-color: #a81813;
-    padding: 10px;
-    font-size: 32px;
     color: white;
+    font-size: 2rem;
 }
 
-.ingredients {
-    padding: 10px;
+th {
+    text-align: left;
+    color: limegreen;
 }
 
-/**************************************************************
-*   Bottom
-**************************************************************/
-footer {
-    padding-left: 15px;
-    font-size: 25px;
+table {
+    margin: 2rem auto;
+    width: 80%;
+    border-spacing: 1rem;
+}
+
+tr {
+    background-color: #3a3541;
+}
+
+.top-row{
+    background-color: #1F1B24;
+}
+
+h1 {
+    color: white;
+    font-size: 3rem;
+    margin: 2rem 10%;
+    filter: drop-shadow(0 0 0.75rem limegreen);
+}
+
+.above-table {
+    display: inline;
 }
